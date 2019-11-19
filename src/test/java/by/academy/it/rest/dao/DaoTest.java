@@ -4,6 +4,7 @@ import by.academy.it.rest.config.DaoConfig;
 import by.academy.it.rest.config.HibernateConfig;
 import by.academy.it.rest.entity.Department;
 import by.academy.it.rest.entity.Employee;
+import by.academy.it.rest.entity.Meeting;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,6 +21,9 @@ class DaoTest {
     private EmployeeDao employeeDao;
     @Autowired
     private BaseDao<Department> departmentDao;
+
+    @Autowired
+    private BaseDao<Meeting> meetingDao;
     @Autowired
     private TransactionTemplate transactionTemplate;
 
